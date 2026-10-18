@@ -1,0 +1,4 @@
+# package	commit -- the Phorepoc forks the host tools are built from (the commits the Phorepoc build is pinned to)
+oss.FCL.sftools.dev.build	f458a4ce83f74d603362fe6b71eaa647ccc62fee
+oss.FCL.sf.mw.platformtools	68e210607f481f1ec30ab607dd5c6176a4e6f913
+oss.FCL.sf.mw.uitools	32b8b16c02195b3da66ffaa80aced45037cfd8b1
