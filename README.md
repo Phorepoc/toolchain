@@ -6,7 +6,7 @@ and on your machine, so all it needs on the host is Docker.
 
 | Image | Contents |
 |---|---|
-| `ghcr.io/phorepoc/base` | Ubuntu 24.04; GCC 13 with the x32 runtime (`-mx32`), LLVM `lld`; **Arm GNU Toolchain 14.2.rel1** (`arm-none-eabi`); QEMU (x86), GRUB and ISO tools; the Symbian host tools (below) |
+| `ghcr.io/phorepoc/base` | Ubuntu 24.04; Python 3 with fontTools and cryptography; GCC 13 with the x32 runtime (`-mx32`), LLVM `lld`; **Arm GNU Toolchain 14.2.rel1** (`arm-none-eabi`); QEMU (x86), GRUB and ISO tools; the Symbian host tools (below) |
 | `ghcr.io/phorepoc/arm` | `base` + ARM QEMU, Linux cross compilers, device-tree and U-Boot tools |
 | `ghcr.io/phorepoc/web` | `base` + what the browser engine build needs (CMake, Ninja, Ruby, ICU ...) |
 | `ghcr.io/phorepoc/mesa` | `arm` + Mesa's generator tools (meson, Mako, ...) |
