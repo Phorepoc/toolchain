@@ -1,7 +1,7 @@
 # phorepoc-base: everything a Phorepoc build needs on a Linux host.
 #  - the amd64/x32 side: GCC 13 with the x32 runtime, LLVM's linker, QEMU (x86), GRUB + ISO tools
 #  - the ARM side: Arm GNU Toolchain 14.2.rel1 (arm-none-eabi), checksum-verified
-#  - the Symbian host tools, built from the 2010 source (hosttools/build.sh): rcomp, mifconv, uidcrc, svgtbinencode
+#  - the Symbian host tools, built from the 2010 source (hosttools/build.sh): rcomp, mifconv, uidcrc, svgtbinencode, akn_skin_desc_compiler
 # Build context = the repository root:  docker build -f images/base/Dockerfile -t phorepoc-base .
 
 FROM ubuntu:24.04 AS hosttools

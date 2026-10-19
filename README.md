@@ -22,6 +22,10 @@ Built from the 2010 release's own source, **unmodified**, taken from the Phorepo
 - `svgtbinencode`, the SVG-T encoder (`oss.FCL.sf.mw.uitools`). This is the 32-bit Linux binary the release ships,
   used as it is.
 - `uidcrc`, a small reimplementation of the UID-checksum tool `rcomp` calls.
+- `akn_skin_desc_compiler`, the skin compiler (`oss.FCL.sf.mw.uiresources`, `BRANCH_RCL_3`). The release ships it for
+  Windows only; built here from its source with the platform's feature switches (`bldcodeline.hrh` from
+  `oss.FCL.sf.os.deviceplatformrelease`). On the Phorepoc skin its output matches the Windows build apart from the
+  package ID, which the compiler derives from the clock.
 
 The 1990s-era tools are 32-bit, so the image carries the i386 runtime.
 

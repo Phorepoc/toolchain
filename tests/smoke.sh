@@ -19,6 +19,7 @@ rcomp -u -ot.rsc -ht.rsg -st.rss -it.rss
 test -s t.rsc && grep -q R_TEST t.rsg
 od -An -tx1 t.rsc | head -2
 mifconv 2>&1 | grep -q Mifconv
+akn_skin_desc_compiler 2>&1 | grep -qi "skin"
 svgtbinencode 2>&1 | grep -q ERROR
 echo "smoke: OK"
 EOF
