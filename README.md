@@ -19,8 +19,8 @@ Built from the 2010 release's own source, **unmodified**, taken from the Phorepo
 - `rcomp`, the resource compiler (`oss.FCL.sftools.dev.build`), using the source's own Linux build switches. Its output
   is byte-identical to the Windows build.
 - `mifconv`, the icon compiler (`oss.FCL.sf.mw.platformtools`).
-- `svgtbinencode`, the SVG-T encoder (`oss.FCL.sf.mw.uitools`). This is the 32-bit Linux binary the release ships,
-  used as it is.
+- The SVG-T icon encoder is not here: the release ships `svgtbinencode` as a binary only, and its Linux build does not
+  run on a current system. The pdk has a reimplementation (`tools/svgtenc`) that writes the same bytes.
 - `uidcrc`, a small reimplementation of the UID-checksum tool `rcomp` calls.
 - `akn_skin_desc_compiler`, the skin compiler (`oss.FCL.sf.mw.uiresources`, `BRANCH_RCL_3`). The release ships it for
   Windows only; built here from its source with the platform's feature switches (`bldcodeline.hrh` from

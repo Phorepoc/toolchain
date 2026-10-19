@@ -3,7 +3,6 @@
 #   <src-root> holds the release packages as checked out from the Phorepoc forks:
 #     oss.FCL.sftools.dev.build      (bintools/rcomp: the resource compiler)
 #     oss.FCL.sf.mw.platformtools    (gfxconversion/mifconv: the icon compiler)
-#     oss.FCL.sf.mw.uitools          (svgtencoder: the shipped 32-bit Linux SVG-T encoder, used as it is)
 #     oss.FCL.sf.mw.uiresources      (skins/AknSkins: the skin descriptor compiler; its BRANCH_RCL_3, the version of the
 #                                     skin descriptor the Phorepoc skin is built from)
 #     oss.FCL.sf.os.deviceplatformrelease (bldcodeline.hrh: the platform's feature switches the skin compiler is built with)
@@ -33,12 +32,6 @@ M=$SRC/oss.FCL.sf.mw.platformtools/gfxconversion/mifconv
 # shellcheck disable=SC2046
 g++ -m32 -O2 -w -std=gnu++98 -D__LINUX__ -include cstring -include cstdlib -I"$M/inc" -o "$OUT/mifconv" $(ls "$M"/src/*.cpp)
 echo "mifconv built"
-
-E=$SRC/oss.FCL.sf.mw.uitools/svgtencoder/svgtenc/standalone
-cp "$E/binary/svgtbinencode" "$OUT/svgtbinencode"
-cp "$E/lib_linux/libxercesenc-c.so.28" "$OUT/"
-chmod +x "$OUT/svgtbinencode"
-echo "svgtbinencode installed (shipped 32-bit binary + its xerces library)"
 
 # the skin descriptor compiler (AknSkinDescCompiler in the release, which ships it for Windows only). The source has its
 # own Linux path; it is built with the platform's feature switches (RD_ENHANCED_SKINNING ...: without them it refuses
