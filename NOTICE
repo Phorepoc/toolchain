@@ -1,0 +1,7 @@
+Phorepoc toolchain
+Copyright The Phorepoc Authors (see AUTHORS)
+
+Phorepoc was founded by Kyriakos Bompotis.
+
+Licensed under the Eclipse Public License 1.0 (LICENSE): the Dockerfiles and scripts of the build images. The images
+themselves contain third-party tools (compilers, binutils, Python ...) under their own licences.
