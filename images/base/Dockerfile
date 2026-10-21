@@ -23,7 +23,7 @@ RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y --no-in
         build-essential g++-multilib libx32stdc++-13-dev libx32gcc-13-dev lld \
         libc6:i386 libstdc++6:i386 \
         python3 python3-fonttools python3-cryptography perl git ca-certificates curl xz-utils file \
-        grub-pc-bin grub-common xorriso mtools qemu-system-x86 \
+        grub-pc-bin grub-common xorriso mtools qemu-system-x86 qemu-utils \
         gperf flex bison pkg-config libpng-dev \
     && rm -rf /var/lib/apt/lists/*
 
