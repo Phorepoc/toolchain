@@ -1,0 +1,10 @@
+# Quick checks on every push and pull request: the layering rule (pdk docs/layering.md).
+name: lint
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  layering:
+    uses: Phorepoc/pdk/.github/workflows/layering.yml@main

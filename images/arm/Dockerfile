@@ -1,4 +1,4 @@
-# phorepoc-arm: the PinePhone / ARM side on top of phorepoc-base -- ARM QEMU (the `virt` machine runs the PinePhone
+# phorepoc-arm: the ARM side on top of phorepoc-base -- ARM QEMU (the `virt` machine runs the board's
 # kernel), the Linux cross compilers some boot pieces use, device-tree and U-Boot tools.
 ARG BASE=ghcr.io/phorepoc/base:latest
 FROM ${BASE}
