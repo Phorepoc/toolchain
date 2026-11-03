@@ -1,4 +1,6 @@
 #!/bin/sh
+# Copyright The Phorepoc Authors
+# SPDX-License-Identifier: Apache-2.0
 # build.sh <src-root> <out-dir> -- build the Symbian host tools from the 2010 source, unmodified, on Linux.
 #   <src-root> holds the release packages as checked out from the Phorepoc forks:
 #     oss.FCL.sftools.dev.build      (bintools/rcomp: the resource compiler)

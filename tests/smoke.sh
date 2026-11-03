@@ -1,4 +1,6 @@
 #!/bin/sh
+# Copyright The Phorepoc Authors
+# SPDX-License-Identifier: Apache-2.0
 # smoke.sh <base-image> -- the base image's tools start and do real work: compilers for both targets, the linker, and
 # a round trip through the Symbian resource compiler (rcomp -> uidcrc).
 set -eu

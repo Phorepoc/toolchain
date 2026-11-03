@@ -1,3 +1,5 @@
+/* Copyright The Phorepoc Authors
+ * SPDX-License-Identifier: Apache-2.0 */
 /* uidcrc.c -- drop-in for Symbian's uidcrc host tool (rcomp shells out to it).
  *   uidcrc <uid1> <uid2> <uid3> <outfile>
  * Writes the 16-byte TCheckedUid header: three UIDs + the UID checksum
