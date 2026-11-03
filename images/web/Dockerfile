@@ -3,5 +3,5 @@
 ARG BASE=ghcr.io/phorepoc/base:latest
 FROM ${BASE}
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        cmake ninja-build ruby perl python3 gperf pkg-config libicu-dev unifdef libc6-dev-x32 \
+        cmake ninja-build ruby perl python3 gperf pkg-config libicu-dev unifdef libc6-dev-x32 nasm \
     && rm -rf /var/lib/apt/lists/*
