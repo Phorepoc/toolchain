@@ -11,7 +11,7 @@ own machine. That's why the only thing you need to install yourself is Docker.
 
 ## The Symbian tools
 
-A few tools from the 2010 release are needed to build Symbian at all, like the resource compiler. Nokia only ever
+A few tools from the 2010 release are needed to build Phorepoc OS at all, like the resource compiler. Nokia only ever
 shipped most of them for Windows, so we build them from the release's own source, unchanged, at the commits in
 [hosttools/sources.lock](hosttools/sources.lock).
 
