@@ -48,4 +48,4 @@ sh tests/smoke.sh phorepoc/base:dev
 
 ## License
 
-EPL-1.0, the license of the Symbian release. The other tools in the images keep their own licenses.
+EPL-1.0, the license of the Symbian release; a few of our files are EPL-2.0 OR GPL-2.0-or-later, as their headers say. The other tools in the images keep their own licenses.
