@@ -22,5 +22,8 @@ test -s t.rsc && grep -q R_TEST t.rsg
 od -An -tx1 t.rsc | head -2
 mifconv 2>&1 | grep -q Mifconv
 akn_skin_desc_compiler 2>&1 | grep -qi "skin"
+# UEFI: GRUB's x86_64-efi platform (grub-mkrescue's EFI half) and the OVMF firmware the boot tests run under
+test -f /usr/lib/grub/x86_64-efi/multiboot2.mod && test -f /usr/lib/grub/i386-pc/multiboot2.mod
+ls /usr/share/OVMF/OVMF_CODE_4M.fd
 echo "smoke: OK"
 EOF

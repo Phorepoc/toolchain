@@ -1,5 +1,6 @@
 # phorepoc-base: everything a Phorepoc build needs on a Linux host.
-#  - the amd64/x32 side: GCC 13 with the x32 runtime, LLVM's linker, QEMU (x86), GRUB + ISO tools
+#  - the amd64/x32 side: GCC 13 with the x32 runtime, LLVM's linker, QEMU (x86) + OVMF, GRUB for BIOS and
+#    x86_64-efi (grub-mkrescue then makes a hybrid ISO: BIOS El Torito + an EFI system partition) + ISO tools
 #  - the ARM side: Arm GNU Toolchain 14.2.rel1 (arm-none-eabi), checksum-verified
 #  - the Symbian host tools, built from the 2010 source (hosttools/build.sh): rcomp, mifconv, uidcrc, akn_skin_desc_compiler
 # Build context = the repository root:  docker build -f images/base/Dockerfile -t phorepoc-base .
@@ -23,7 +24,7 @@ RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y --no-in
         build-essential g++-multilib libx32stdc++-13-dev libx32gcc-13-dev lld \
         libc6:i386 libstdc++6:i386 \
         python3 python3-fonttools python3-cryptography perl git ca-certificates curl xz-utils file \
-        grub-pc-bin grub-common xorriso mtools qemu-system-x86 qemu-utils \
+        grub-pc-bin grub-efi-amd64-bin grub-common xorriso mtools qemu-system-x86 qemu-utils ovmf \
         gperf flex bison pkg-config libpng-dev \
     && rm -rf /var/lib/apt/lists/*
 
