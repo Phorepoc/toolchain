@@ -12,10 +12,10 @@ own machine. That's why the only thing you need to install yourself is Docker.
 ## The Symbian tools
 
 A few tools from the 2010 release are needed to build Phorepoc OS at all, like the resource compiler. Nokia only ever
-shipped most of them for Windows, so we build them from the release's own source, unchanged, at the commits in
+shipped most of them for Windows, so Phorepoc builds them from the release's own source, unchanged, at the commits in
 [hosttools/sources.lock](hosttools/sources.lock).
 
-- **`rcomp`** compiles resource files. Our Linux build gives exactly the same bytes as the Windows one.
+- **`rcomp`** compiles resource files. The Linux build gives exactly the same bytes as the Windows one.
 - **`mifconv`** compiles icons.
 - **`akn_skin_desc_compiler`** compiles skins. The release only had it for Windows. Its output matches the Windows
   build except for the package ID, which the compiler takes from the clock.
@@ -48,4 +48,4 @@ sh tests/smoke.sh phorepoc/base:dev
 
 ## License
 
-EPL-1.0, the license of the Symbian release; a few of our files are EPL-2.0 OR GPL-2.0-or-later, as their headers say. The other tools in the images keep their own licenses.
+EPL-1.0, the license of the Symbian release; a few of Phorepoc's files are EPL-2.0 OR GPL-2.0-or-later, as their headers say. The other tools in the images keep their own licenses.
